@@ -8,7 +8,7 @@ set(
 )
 set(
 	PROMETHEUS_UT_MINOR_VERSION 
-	0 
+	1 
 	CACHE STRING 
 	"PROMETHEUS-UT minor version"
 )
