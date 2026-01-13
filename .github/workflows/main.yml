@@ -73,11 +73,13 @@ jobs:
         run: |
           if [ "${{matrix.toolset}}" = "CLANG" ]; then
             cmake $GITHUB_WORKSPACE \
+              -G "Ninja" \
               -DCMAKE_BUILD_TYPE=${{matrix.build_type}} \
               -DCMAKE_C_COMPILER=clang-cl \
               -DCMAKE_CXX_COMPILER=clang-cl
           else
             cmake $GITHUB_WORKSPACE \
+              -G "Ninja" \
               -DCMAKE_BUILD_TYPE=${{matrix.build_type}}
           fi
 
