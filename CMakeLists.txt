@@ -14,7 +14,7 @@ set(
 )
 set(
 	PROMETHEUS_UT_PATCH_VERSION 
-	0
+	1
 	CACHE STRING 
 	"PROMETHEUS-UT patch version"
 )
